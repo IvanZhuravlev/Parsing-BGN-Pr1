@@ -29,17 +29,12 @@ app.get('/api', (req, res) => {
     var dataJSON = $("table.data").text()
     dataJSON = dataJSON.replace(/\s+/g, " ")
       .split(" ");
-
-    //console.log(dataJSON);
     var mounth = []
     var value = []
-    // var cell = []
     for (var i = 6; i < dataJSON.length - 6; i = i + 3) {
       mounth.push(dataJSON[i])
       value.push(dataJSON[i + 2])
     }
-    // console.log('mounth', mounth)
-    // console.log('value', value)
     res.send({
       mounth: mounth,
       value: value
