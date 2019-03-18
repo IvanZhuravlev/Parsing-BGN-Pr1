@@ -1,13 +1,18 @@
 function draw(data) {
   var ctx = document.getElementById("myChart");
+
+  for (var i = 0; i < data.value.length; i++) {
+    data.value[i] = parseFloat(data.value[i].replace(',', '.'));
+  }
+
+
   var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: data.mounth,
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
+        data: data.value,
+        backgroundColor: "ffo"
       }]
     },
     options: {
@@ -30,8 +35,8 @@ window.onload = function() {
       var mounth = data.mounth
       var value = data.value
       draw(data)
-      console.log(data.mounth)
-      console.log(data.value)
+      // console.log(data.mounth)
+      // console.log(data.value)
     }
 
   };
