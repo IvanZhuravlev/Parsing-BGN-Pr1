@@ -1,0 +1,28 @@
+{
+  "name": "parsing-bgn-pr1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanZhuravlev/Parsing-BGN-Pr1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvanZhuravlev/Parsing-BGN-Pr1/issues"
+  },
+  "homepage": "https://github.com/IvanZhuravlev/Parsing-BGN-Pr1#readme"
+}

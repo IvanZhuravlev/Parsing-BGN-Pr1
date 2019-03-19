@@ -1,6 +1,5 @@
 // Рабочий сервер
 const bodyParser = require("body-parser");
-const Chart = require('chart.js')
 const request = require('request')
 const express = require('express')
 const cheerio = require('cheerio')
