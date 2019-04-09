@@ -2,7 +2,7 @@ function draw(data) {
   var ctx = document.getElementById("myChart");
 
   for (var i = 0; i < data.value.length; i++) {
-    data.value[i] = parseFloat(data.value[i].replace(',', '.'));
+    data.value[i] = parseFloat(data.value[i].replace(',', '.')); // Преобразует строковый аргумент в число с плавающей точкой.
   }
 
 
