@@ -1,8 +1,8 @@
 // Рабочий сервер
 const bodyParser = require("body-parser");
-const request = require('request')
+const request = require('request') // Модуль для создания запросов и скачивания страницы в память.
 const express = require('express')
-const cheerio = require('cheerio')
+const cheerio = require('cheerio') // Порт для работы с данными.
 const path = require('path')
 const app = express()
 const port = 3000
